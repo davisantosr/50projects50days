@@ -57,7 +57,7 @@ body {
   transition: 0.4s ease;
 }
 
-.cicle {
+.circle {
   background-color: #fff;
   color: #999;
   border-radius: 50%;
@@ -70,7 +70,7 @@ body {
   transition: 0.4s ease;
 }
 
-.cicle.active {
+.circle.active {
   border-color: var(--line-border-fill);
 }
 
