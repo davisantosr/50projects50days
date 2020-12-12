@@ -10,12 +10,12 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
   margin: 0;
+  height: 80%;
 }
 
-.container {
-  display: flex;
+#container {
+  display: grid;
   width: 90vw;
 }
 
@@ -23,7 +23,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 5vh;
+  width: 5vh;
   border-radius: 50px;
   color: #fff;
   cursor: pointer;
@@ -44,6 +45,14 @@ body {
 
 .panel.active {
   flex: 1;
+  transition: 0.8s ease-in-out;
+  height: 30vh;
+  width: 50vw;
+}
+
+.panel.removing {
+  flex: 0.09;
+  transition: 0.9s ease-in;
 }
 
 .panel.active h3 {
