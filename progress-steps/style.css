@@ -74,6 +74,14 @@ body {
   border-color: var(--line-border-fill);
 }
 
+.circle.finished {
+  border-color: red;
+  flex: 1;
+  transition: 0.8s ease-in-out;
+  height: 30vh;
+  width: 50vw;
+}
+
 .btn {
   background-color: var(--line-border-fill);
   color: #fff;

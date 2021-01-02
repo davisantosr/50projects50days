@@ -2,6 +2,7 @@ const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles = document.querySelectorAll('.circle')
+const number4 = document.getElementsByClassName('content')
 
 let currentActive = 1;
 
@@ -46,6 +47,21 @@ function update() {
     prev.disabled = false
     next.disabled = false
   }
+
+  if(currentActive === circles.length){
+    circles[3].classList.remove('active')
+    circles[3].classList.add('finished')
+    circles[3].innerHTML = "FINALIZADO"
+
+    setTimeout(() => {
+      circles[3].classList.remove('finished')
+    }, 5000)
+    circles[3].classList.add('active')
+    
+  }
+
 }
 
 
+number4.innerHTML = 'TESTE'
+console.log(number4)
